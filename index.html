@@ -162,11 +162,12 @@ function generateImage() {
     ctx.clearRect(0, 0, WIDTH, HEIGHT);
     drawBaseImage();
 
-  ctx.fillStyle = "#1f3c88";
-    ctx.textAlign = "right";
+  ctx.fillStyle = "#1F386C";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
 
     ctx.font = "bold 38px Cairo";
-    ctx.fillText(name, 800, 950);
+    ctx.fillText(name, WIDTH / 2, 690); // الاسم فقط على ارتفاع 520
 }
 
 function downloadImage() {
